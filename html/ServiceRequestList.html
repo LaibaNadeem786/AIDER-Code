@@ -1,0 +1,170 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Manage Service Requests </title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="favorite.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-info">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+        <img src="logoicon2.png" alt="Logo" style="width:40px;">
+        <a class="navbar-brand" href="index.html">AIDER</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbarcollapses">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigationbarcollapses">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ServiceList.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ServiceRequestList.html">Manage Service Request</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login.html">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+  <div class="container " >
+
+    <div class="card"  "center" style="width:auto;" >
+      <br>
+      <br>
+        <img class="card-img-top mx-auto d-block" src="requestlist.png" alt="service icon" style="width:20%" >
+
+  <h1 class="text-center">Service Requests</h1>
+  <div class="dropdown text-right">
+    <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">Sort by
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Request ID</li>
+      <li><a href="#">Required Date</li>
+      <li><a href="#">Status</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Request ID</th>
+        <th scope="col">Service Code</th>
+        <th scope="col">Service</th>
+        <th scope="col">Required Date</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><button type="button" class="btn btn-primary" onclick="myFunction1()">C001</button></td>
+        <script>
+function myFunction1() {
+document.getElementById("date").innerHTML = "7/2/2018";
+document.getElementById("status").innerHTML = "Completed";
+}
+</script>
+        <td>001</td>
+        <td>Cleaning</td>
+        <td id="date">DD/MM/YY</td>
+        <td id="status" style="color:blue;">Completed</td>
+        <script>
+document.getElementById("status").onclick = function() {myFunction()};
+
+function myFunction() {
+    document.getElementById("status").innerHTML = "Cancelled";
+}
+</script>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td><button type="button" class="btn btn-primary" onclick="myFunction2()">C002</button></td>
+        <script>
+function myFunction2() {
+document.getElementById("date2").innerHTML = "15/5/2018";
+document.getElementById("status2").innerHTML = "Completed";
+}
+</script>
+        <td>001</td>
+        <td>Cleaning</td>
+        <td id="date2">DD/MM/YY</td>
+        <td id="status2" style="color:blue;">Completed</td>
+        <script>
+document.getElementById("status2").onclick = function() {myFunction2()};
+
+function myFunction2() {
+    document.getElementById("status2").innerHTML = "Cancelled";
+}
+</script>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td><button type="button" class="btn btn-primary" onclick="myFunction3()">S015</button></td>
+        <script>
+function myFunction3() {
+document.getElementById("date3").innerHTML = "21/7/2018";
+document.getElementById("status3").innerHTML = "Cancelled";
+}
+</script>
+        <td>002</td>
+        <td>Shopping</td>
+        <td id="date3">DD/MM/YY</td>
+        <td id="status3" style="color:blue;">Cancelled</td>
+        <script>
+document.getElementById("status3").onclick = function() {myFunction3()};
+
+function myFunction3() {
+    document.getElementById("status3").innerHTML = "Completed";
+}
+</script>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Notes:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="updateSRequest.html" class="btn btn-success" role="button">Edit Notes</button></td>
+
+      </tr>
+      <tr>
+        <div class="text-center">
+          <td id="note" style="color:#ff0000;">Notes will be written here</td>
+</div>
+        </tr>
+    </tbody>
+  </table>
+  <br>
+
+  </div>
+  <br>
+  <a href="review.html" class="btn btn-danger btn-block" role="button">Review Senior</a>
+  <a href="review2.html" class="btn btn-danger btn-block" role="button">Review Service Provider</a>
+  </div>
+  </body>
+  <br>
+  <footer class="page-footer font-small blue" style="background-color:#000000; color:#ffffff;">
+
+    <div class="footer-copyright text-center py-3">Copyright © 2018 AIDER
+      <p>All Rights Reserved by Laiba & Sharifah</p>
+    </div>
+
+  </footer>
+  </html>

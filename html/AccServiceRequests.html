@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Update Service Requests </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-info">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+      <img src="C:\Users\user\Desktop\Assignment1 webprogramming\images\planelogo.png" alt="Logo" style="width:40px;">
+      <a class="navbar-brand" href="#">AIDER</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbarcollapses">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigationbarcollapses">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ServiceList.html">Services</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="ServiceRequestList.html">Manage Service Request</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Login.html">Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+<div class="container " >
+
+  <div class="card"  "center" style="width:auto" >
+    <br>
+    <br>
+      <img class="card-img-top mx-auto d-block" src="logoicon2.png" alt="Card image" style="width:30%" >
+        <h1 class="text-center">Update Service Requests</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Request ID</th>
+              <th>Service Description</th>
+              <th>Service Code</th>
+              <th>Required Date</th>
+              <th>Status</th>
+              <th>Accept</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><button type="button" class="btn btn-primary"onclick="myFunction1()">C101</button></td>
+              <script>
+function myFunction1() {
+    document.getElementById("date").innerHTML = "18/3/2018";
+    document.getElementById("status").innerHTML = "Pending";
+      document.getElementById("notes").innerHTML = "Spring Cleaning ";
+}
+</script>
+              <td>Cleaning</td>
+              <td>006</td>
+              <td id="date">DD/MM/YY</td>
+              <td id="status"></td>
+              <td><form>
+                <div class="checkbox">
+                  <label><input type="checkbox" id="check1" value="" onclick="myClick1()"></label>
+                  <script>
+function myClick1() {
+    var checkBox = document.getElementById("check1");
+    var text = document.getElementById("status").innerHTML="Accepted";
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+                </div>
+              </form></td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-primary" onclick="myFunction2()">S002</button></td>
+              <script>
+function myFunction2() {
+    document.getElementById("date2").innerHTML = "9/5/2018";
+    document.getElementById("status2").innerHTML = "Pending";
+      document.getElementById("notes").innerHTML = "Shop Till You Drop";
+}
+</script>
+              <td>Shopping</td>
+              <td>001</td>
+              <td id="date2">DD/MM/YY</td>
+              <td id="status2"></td>
+              <td><form>
+                <div class="checkbox">
+                  <label><input type="checkbox" id="check2" value="" onclick="myClick2()"></label>
+                  <script>
+function myClick2() {
+    var checkBox = document.getElementById("check2");
+    var text = document.getElementById("status2").innerHTML="Accepted";
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+                </div>
+              </form>
+            </td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-primary" onclick="myFunction3()">P121</button></td>
+              <script>
+function myFunction3() {
+    document.getElementById("date3").innerHTML = "21/6/2018";
+    document.getElementById("status3").innerHTML = "Pending";
+    document.getElementById("notes").innerHTML = "Sensitive Skin, Dry Skin";
+}
+</script>
+              <td>Personal Care</td>
+              <td>003</td>
+              <td id="date3">DD/MM/YY</td>
+              <td id="status3"></td>
+              <td><form>
+                <div class="checkbox">
+                  <label><input type="checkbox" id="check3" value="" onclick="myClick3()"></label>
+                  <script>
+function myClick3() {
+    var checkBox = document.getElementById("check3");
+    var text = document.getElementById("status3").innerHTML="Accepted";
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+                </div>
+              </form></td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-primary" onclick="myFunction4()">H058</button></td>
+              <script>
+function myFunction4() {
+    document.getElementById("date4").innerHTML = "1/7/2018";
+    document.getElementById("status4").innerHTML = "Pending";
+      document.getElementById("notes").innerHTML = "Eat healthy to live longer";
+}
+</script>
+              <td>Healthcare</td>
+              <td>004</td>
+              <td id="date4">DD/MM/YY</td>
+              <td id="status4"></td>
+              <td><form>
+                <div class="checkbox">
+                  <label><input type="checkbox" id="check4" value="" onclick="myClick4()"></label>
+                  <script>
+function myClick4() {
+    var checkBox = document.getElementById("check4");
+    var text = document.getElementById("status4").innerHTML="Accepted";
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+                </div>
+              </form></td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-primary"onclick="myFunction5()">S003</button></td>
+              <script>
+function myFunction5() {
+    document.getElementById("date5").innerHTML = "19/2/2018";
+    document.getElementById("status5").innerHTML = "Pending";
+      document.getElementById("notes").innerHTML = "Drive Safely Obey Traffic Rules";
+}
+</script>
+              <td>Transportation</td>
+              <td>005</td>
+              <td id="date5">DD/MM/YY</td>
+              <td id="status5"></td>
+              <td><form>
+                <div class="checkbox">
+                  <label><input type="checkbox" id="check5"value="" onclick="myClick5()"></label>
+                  <script>
+function myClick5() {
+    var checkBox = document.getElementById("check5");
+    var text = document.getElementById("status5").innerHTML="Accepted";
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+                </div>
+              </form></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Notes:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><button type="button" class="btn btn-success" onclick="myNote()">Edit Notes</button></td>
+            </tr>
+            <tr>
+              <div class="text-center">
+                <td id="note"></td>
+<script>
+function myNote() {
+    var sentence = prompt("You may edit note", "Written here");
+    if (sentence != null) {
+        document.getElementById("note").innerHTML = person;
+    }
+}
+</script>
+</div>
+              </tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-danger btn-block" onclick="myAccept()">Accept All Service Request</button>
+          <script>
+function myAccept() {
+document.getElementById("status").innerHTML = "Accepted";
+document.getElementById("status2").innerHTML = "Accepted";
+document.getElementById("status3").innerHTML = "Accepted";
+document.getElementById("status4").innerHTML = "Accepted";
+document.getElementById("status5").innerHTML = "Accepted";
+}
+</script>
+          <a href="SelectViewRating.html" class="btn btn-success btn-block" role="button">View Rating</a>
+      </div>
+      </div>
+      </div>
+</body>
+<footer class="page-footer font-small blue" style="background-color:#000000; color:#ffffff;">
+
+  <div class="footer-copyright text-center py-3">Copyright © 2018 AIDER
+    <a href="index.html"> AIDER.com</a>
+    <p>All Rights Reserved by Laiba & Sharifah</p>
+  </div>
+
+</footer>
+</html>
